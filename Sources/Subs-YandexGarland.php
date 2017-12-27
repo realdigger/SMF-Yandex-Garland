@@ -17,7 +17,7 @@ function load_garland_hooks()
 {
     add_integration_function('integrate_load_theme', 'garland_load_theme', false);
     add_integration_function('integrate_general_mod_settings', 'garland_settings', false);
-    add_integration_function('integrate_menu_buttons', 'garland_ñopyright', false);
+    add_integration_function('integrate_menu_buttons', 'garland_copyright', false);
 }
 
 function garland_load_theme()
@@ -68,7 +68,7 @@ function garland_settings(&$config_vars)
     $config_vars[] = array('check', 'yandexgarland_soundenable');
 }
 
-function garland_ñopyright()
+function garland_copyright()
 {
     global $context;
     if ($context['current_action'] == 'credits') {

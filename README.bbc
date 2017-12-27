@@ -14,7 +14,7 @@ You can hear the sound when you touch balls by your mouse or when you press some
 [b]Change Log[/b]
 
 v1.3
-- flash and jQuery dependency removed
+- flash and jQuery dependency removed (thanks to https://github.com/bybelov/new-year-garland)
 - some code improvements
 
 v1.2

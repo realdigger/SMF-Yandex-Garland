@@ -11,7 +11,7 @@
 	<type>modification</type>
 	<version>1.3</version>
 	<install for="2.0 - 2.0.99">
-		<readme type="file" parsebbc="true">readme.txt</readme>
+		<readme type="file" parsebbc="true">README.bbc</readme>
 		<database>install.php</database>
 		<require-dir name="Sources" destination="$boarddir" />
 		<require-dir name="Themes" destination="$boarddir" />

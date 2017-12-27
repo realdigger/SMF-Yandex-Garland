@@ -17,6 +17,9 @@ Download and install latest release tar.gz file from [releases page](https://git
 Musical Christmas garland for SMF. Using JS code from https://github.com/bybelov/new-year-garland  
 You can hear the sound when you touch balls by your mouse or when you press some keys. For example for play Jingle Bells press t-t-t-t-t-t-t-i-q-e-t-y-y-y-y-y-t-t-t-t-t-e-e-q-e-i
 
+Should work with any modern browsers like Edge, Chrome, Firefox, Opera.
+Doesn't work with IE11 and older.
+
 ![garland](https://user-images.githubusercontent.com/1187218/34391087-2fef9d66-eb5d-11e7-919b-92bc923bcd18.png)
 
 ### Features
@@ -30,6 +33,9 @@ You can hear the sound when you touch balls by your mouse or when you press some
 ## Описание
 Новогодняя музыкальная гирлянда от Яндекса. Использован код JS из https://github.com/bybelov/new-year-garland  
 Шарики звенят при наведении мыши или нажатии некоторых клавиш клавиатуры. Можно играть мелодии, например, чтобы сыграть Jingle Bells нажимайте t-t-t-t-t-t-t-i-q-e-t-y-y-y-y-y-t-t-t-t-t-e-e-q-e-i
+
+Поддерживаются современные браузеры, такие как Edge, Chrome, Firefox, Opera.
+IE11 и старше не поддерживаются.
 
 ### Возможности
 * Включение/выключение гирлянды.

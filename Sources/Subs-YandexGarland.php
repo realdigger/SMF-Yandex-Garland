@@ -35,7 +35,7 @@ function garland_load_theme()
         foreach ($layerHolder as $layer) {
             $context['template_layers'][] = $layer;
             if ($layer == 'html') {
-                $context['template_layers'][] = 'garland';
+                $context['template_layers'][] = 'yandex_garland';
             }
         }
     }

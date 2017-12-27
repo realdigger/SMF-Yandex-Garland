@@ -9,7 +9,7 @@
  * YandexGarland.template.php
  *******************************************/
 
-function template_garland_above()
+function template_yandex_garland_above()
 {
 
     global $context;
@@ -143,6 +143,6 @@ function template_garland_above()
 </div>';
 }
 
-function template_garland_below()
+function template_yandex_garland_below()
 {
 }

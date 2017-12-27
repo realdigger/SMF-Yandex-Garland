@@ -1,7 +1,7 @@
 [![GitHub release](https://img.shields.io/github/release/realdigger/SMF-Yandex-Garland.svg)]()
 [![SMF](https://img.shields.io/badge/SMF-2.0-blue.svg?style==flat)](https://simplemachines.org)
 ![Hooks](https://img.shields.io/badge/hooks%20only-✓-blue.svg?style==flat)
-[![license](https://img.shields.io/github/license/realdigger/SMF-Yandex-Garland.svg)]()
+
 # SMF Yandex Garland mod  
 * **Author:** [mamavrn.ru](http://mamavrn.ru)
 * **License:** Attribution-ShareAlike 3.0 Unported (CC BY-SA 3.0)
@@ -21,6 +21,7 @@ You can hear the sound when you touch balls by your mouse or when you press some
 ### Features
 * Enable/disable garland.
 * Enable/disable key's sound.
+* Enable/disable garland on mobile devices.
 
 ## Установка    
 Загрузите и установите файл tar.gz актуальной версии со [страницы загрузок](https://github.com/realdigger/SMF-Yandex-Garland/releases).
@@ -32,3 +33,4 @@ You can hear the sound when you touch balls by your mouse or when you press some
 ### Возможности
 * Включение/выключение гирлянды.
 * Включение/выключение звука клавиш.
+* Включение/выключение гирлянды на мобильных устройствах.

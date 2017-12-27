@@ -17,7 +17,7 @@ function garland_load_theme()
 {
     global $boardurl, $context, $modSettings;
 
-    if (empty($modSettings['yandexgarland_modenable'])) {
+    if (empty($modSettings['yandexgarland_modenable']) || (empty($modSettings['yandexgarland_mobileenable']) && (!empty($context['browser']['is_iphone']) || !empty($context['browser']['is_android'])))) {
         return;
     }
 
@@ -41,7 +41,7 @@ function garland_load_theme()
     }
 
     $context['js_boardurl'] = '
-		<script  type="text/javascript">
+		<script type="text/javascript">
 		//<![CDATA[
 		js_audio_url = "' . $boardurl . '/Themes/default/scripts/balls/audio/";
 		js_soundenable = ' . $modSettings['yandexgarland_soundenable'] . ';
@@ -57,5 +57,6 @@ function garland_settings(&$config_vars)
         $config_vars[] = array('title', 'yandexgarland_name');
     }
     $config_vars[] = array('check', 'yandexgarland_modenable');
+    $config_vars[] = array('check', 'yandexgarland_mobileenable');
     $config_vars[] = array('check', 'yandexgarland_soundenable');
 }

@@ -22,7 +22,7 @@ function garland_load_theme()
 
 	$context['html_headers'] .= '
 		<link type="text/css" rel="stylesheet" href="' . $boardurl . '/Themes/default/css/garland.css" />
-		<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+		<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
 		<script type="text/javascript" src="' . $boardurl . '/Themes/default/scripts/swfobject.min.js"></script> 
 		<script type="text/javascript" src="' . $boardurl . '/Themes/default/scripts/newyear.js"></script>';
 

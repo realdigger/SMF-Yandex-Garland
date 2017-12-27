@@ -13,6 +13,13 @@ if (!defined('SMF')) {
     die('Hacking attempt...');
 }
 
+function load_garland_hooks()
+{
+    add_integration_function('integrate_load_theme', 'garland_load_theme', false);
+    add_integration_function('integrate_general_mod_settings', 'garland_settings', false);
+    add_integration_function('integrate_menu_buttons', 'garland_ñopyright', false);
+}
+
 function garland_load_theme()
 {
     global $boardurl, $context, $modSettings;
@@ -59,4 +66,12 @@ function garland_settings(&$config_vars)
     $config_vars[] = array('check', 'yandexgarland_modenable');
     $config_vars[] = array('check', 'yandexgarland_mobileenable');
     $config_vars[] = array('check', 'yandexgarland_soundenable');
+}
+
+function garland_ñopyright()
+{
+    global $context;
+    if ($context['current_action'] == 'credits') {
+        $context['copyrights']['mods'][] = '<a href="https://github.com/realdigger/SMF-Yandex-Garland" title="Yandex Garland" target="_blank">Yandex Garland</a>';
+    }
 }

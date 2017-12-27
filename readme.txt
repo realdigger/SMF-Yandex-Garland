@@ -13,6 +13,10 @@ You can hear the sound when you touch balls by your mouse or when you press some
 
 [b]Change Log[/b]
 
+v1.3
+- flash and jQuery dependency removed
+- some code improvements
+
 v1.2
 - added mod on/off setting
 - added keyboard sound on/off setting 

@@ -1,0 +1,31 @@
+<?xml version="1.0"?>
+<!DOCTYPE package-info SYSTEM "http://www.simplemachines.org/xml/package-info">
+<package-info xmlns="http://www.simplemachines.org/xml/package-info" xmlns:smf="http://www.simplemachines.org/">
+	<license>
+<!--
+* License - http://creativecommons.org/licenses/by-sa/3.0/ CC BY-SA 3.0
+-->
+	</license>
+	<name>YandexGarland</name>
+	<id>Kapitoshka:YandexGarland</id>
+	<type>modification</type>
+	<version>1.2</version>
+	<install for="2.0 RC5, 2.0 - 2.0.99">
+		<readme type="file" parsebbc="true">readme.txt</readme>
+		<database>install.php</database>
+		<require-dir name="Sources" destination="$boarddir" />
+		<require-dir name="Themes" destination="$boarddir" />
+		<code>hooks.php</code>	
+		<redirect url="$scripturl?action=admin;area=modsettings;sa=general" timeout="1000" />
+	</install>
+	<uninstall for="2.0 RC5, 2.0 - 2.0.99">
+		<code>hooks.php</code>	
+		<remove-file name="$sourcedir/YandexGarland.php" />
+		<remove-file name="$themedir/YandexGarland.template.php" />
+		<remove-file name="$themedir/css/garland.css" />
+		<remove-file name="$themedir/scripts/newyear.js" />
+		<remove-file name="$themedir/scripts/swfobject.min.js" />
+		<remove-file name="$themedir/scripts/ny2012.swf" />
+		<remove-dir name="$themedir/images/balls" />
+	</uninstall>
+</package-info>

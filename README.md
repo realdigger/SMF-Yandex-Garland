@@ -1,11 +1,12 @@
 [![GitHub release](https://img.shields.io/github/release/realdigger/SMF-Yandex-Garland.svg)]()
-[![SMF](https://img.shields.io/badge/SMF-2.0-blue.svg?style==flat)](https://simplemachines.org)
+[![SMF2.0](https://img.shields.io/badge/SMF-2.0-blue.svg?style==flat)](https://simplemachines.org)
+[![SMF2.1](https://img.shields.io/badge/SMF-2.1-blue.svg?style==flat)](https://simplemachines.org)
 ![Hooks](https://img.shields.io/badge/hooks%20only-✓-blue.svg?style==flat)
 
 # SMF Yandex Garland mod  
 * **Author:** [mamavrn.ru](http://mamavrn.ru)
 * **License:** Attribution-ShareAlike 3.0 Unported (CC BY-SA 3.0)
-* **Compatible with:** SMF 2.0
+* **Compatible with:** SMF 2.0, SMF 2.1   
 * **Hooks only:** Yes
 * **Languages:** English, Russian
 

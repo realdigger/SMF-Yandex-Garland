@@ -13,9 +13,13 @@ You can hear the sound when you touch balls by your mouse or when you press some
 
 [b]Change Log[/b]
 
+v1.3.1
+- add SMF 2.1 support
+
 v1.3
 - flash and jQuery dependency removed (thanks to https://github.com/bybelov/new-year-garland)
 - some code improvements
+- add option to enable/disable garland on mobile devices
 
 v1.2
 - added mod on/off setting
@@ -28,5 +32,3 @@ v1.0
 - first release
 
 This mod is licensed under [url=http://creativecommons.org/licenses/by-sa/3.0/]Attribution-ShareAlike 3.0 Unported (CC BY-SA 3.0)[/url]
-
-

@@ -3,6 +3,7 @@ class Balls {
         this.context = context;
         this.buffer = buffer;
     }
+
     setup() {
         this.gainNode = this.context.createGain();
         this.source = this.context.createBufferSource();
@@ -11,10 +12,12 @@ class Balls {
         this.gainNode.connect(this.context.destination);
         this.gainNode.gain.setValueAtTime(1, this.context.currentTime);
     }
+
     play() {
         this.setup();
         this.source.start(this.context.currentTime);
     }
+
     stop() {
         var ct = this.context.currentTime + 1;
         this.gainNode.gain.exponentialRampToValueAtTime(.1, ct);
@@ -28,30 +31,36 @@ class Buffer {
         this.urls = urls;
         this.buffer = [];
     }
+
     loadSound(url, index) {
+        if (!js_allsoundenable) return;
+
         let request = new XMLHttpRequest();
         request.open('get', url, true);
         request.responseType = 'arraybuffer';
         let thisBuffer = this;
-        request.onload = function() {
+        request.onload = function () {
             thisBuffer.context
-                .decodeAudioData(request.response, function(buffer) {
+                .decodeAudioData(request.response, function (buffer) {
                     thisBuffer.buffer[index] = buffer;
-                    if(index == thisBuffer.urls.length-1) {
+                    if (index == thisBuffer.urls.length - 1) {
                         thisBuffer.loaded();
                     }
                 });
         };
         request.send();
     };
+
     getBuffer() {
         this.urls.forEach((url, index) => {
             this.loadSound(url, index);
-    })
+        })
     }
+
     loaded() {
         loaded = true;
     }
+
     getSound(index) {
         return this.buffer[index];
     }
@@ -116,7 +125,7 @@ let ballsSound = buffer.getBuffer();
 let buttons = document.querySelectorAll('.b-ball_bounce');
 buttons.forEach(button => {
     button.addEventListener('mouseenter', playBalls.bind(button));
-button.addEventListener('mouseleave', stopBalls);
+    button.addEventListener('mouseleave', stopBalls);
 })
 
 function ballBounce(e) {
@@ -127,40 +136,48 @@ function ballBounce(e) {
     toggleBounce(i);
 }
 
-function toggleBounce(i){
+function toggleBounce(i) {
     i.classList.add("bounce");
+
     function n() {
         i.classList.remove("bounce")
         i.classList.add("bounce1");
+
         function o() {
             i.classList.remove("bounce1")
             i.classList.add("bounce2");
+
             function p() {
                 i.classList.remove("bounce2")
                 i.classList.add("bounce3");
+
                 function q() {
                     i.classList.remove("bounce3");
                 }
+
                 setTimeout(q, 300)
             }
+
             setTimeout(p, 300)
         }
+
         setTimeout(o, 300)
     }
+
     setTimeout(n, 300)
 }
 
 var array1 = document.querySelectorAll('.b-ball_bounce')
 var array2 = document.querySelectorAll('.b-ball_bounce .b-ball__right')
 
-for(var i=0; i<array1.length; i++){
-    array1[i].addEventListener('mouseenter', function(){
+for (var i = 0; i < array1.length; i++) {
+    array1[i].addEventListener('mouseenter', function () {
         ballBounce(this)
     })
 }
 
-for(var i=0; i<array2.length; i++){
-    array2[i].addEventListener('mouseenter', function(){
+for (var i = 0; i < array2.length; i++) {
+    array2[i].addEventListener('mouseenter', function () {
         ballBounce(this)
     })
 }
@@ -176,7 +193,7 @@ for (let e = 0, c = k.length; e < c; e++) {
 }
 
 document.addEventListener('keydown', function (j) {
-    if (!js_soundenable) return;
+    if (!js_soundenable || !js_allsoundenable) return;
     let i = j.target;
     if (j.which in a) {
         let index = parseInt(a[j.which]);

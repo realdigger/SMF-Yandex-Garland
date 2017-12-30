@@ -10,5 +10,6 @@
  *******************************************/
 
 updateSettings(array('yandexgarland_modenable' => '1'));
+updateSettings(array('yandexgarland_allsoundenable' => '1'));
 updateSettings(array('yandexgarland_soundenable' => '1'));
 updateSettings(array('yandexgarland_mobileenable' => '1'));

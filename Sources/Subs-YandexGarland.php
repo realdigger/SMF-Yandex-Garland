@@ -51,6 +51,7 @@ function garland_load_theme()
 		<script type="text/javascript">
 		//<![CDATA[
 		js_audio_url = "' . $boardurl . '/Themes/default/scripts/balls/audio/";
+		js_allsoundenable = ' . $modSettings['yandexgarland_allsoundenable'] . ';
 		js_soundenable = ' . $modSettings['yandexgarland_soundenable'] . ';
 		//]]>
 		</script>';
@@ -65,6 +66,7 @@ function garland_settings(&$config_vars)
     }
     $config_vars[] = array('check', 'yandexgarland_modenable');
     $config_vars[] = array('check', 'yandexgarland_mobileenable');
+    $config_vars[] = array('check', 'yandexgarland_allsoundenable');
     $config_vars[] = array('check', 'yandexgarland_soundenable');
 }
 
@@ -72,6 +74,6 @@ function garland_copyright()
 {
     global $context;
     if ($context['current_action'] == 'credits') {
-        $context['copyrights']['mods'][] = '<a href="https://github.com/realdigger/SMF-Yandex-Garland" title="Yandex Garland" target="_blank">Yandex Garland</a>';
+        $context['copyrights']['mods'][] = '<a href="https://custom.simplemachines.org/mods/index.php?mod=3587" title="Yandex Garland" target="_blank">Yandex Garland</a>';
     }
 }

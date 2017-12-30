@@ -24,6 +24,7 @@ Doesn't work with IE11 and older.
 
 ### Features
 * Enable/disable garland.
+* Enable/disable sound.
 * Enable/disable key's sound.
 * Enable/disable garland on mobile devices.
 
@@ -39,5 +40,6 @@ IE11 и старше не поддерживаются.
 
 ### Возможности
 * Включение/выключение гирлянды.
+* Включение/выключение звука.
 * Включение/выключение звука клавиш.
 * Включение/выключение гирлянды на мобильных устройствах.
